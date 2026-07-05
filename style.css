@@ -18,3 +18,14 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@theme {
+  /* Define a single reusable color */
+  --color-bg: #060606;
+  --color-border: #464646;
+
+  /* Define a color with multiple shades */
+  --color-custom-blue-50: #f0fdfa;
+  --color-custom-blue-500: #0d9488;
+  --color-custom-blue-900: #115e59;
+}
