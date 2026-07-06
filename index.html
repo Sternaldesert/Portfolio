@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <title>Kian Verdugo | Web Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="style.css">
@@ -18,143 +19,133 @@
   <div class="fixed left-1/2 -translate-x-1/2 top-8 border-2 border-[#464646] rounded-[25px] bg-[#060606] z-999 px-8 py-4">
     <div class="flex justify-center items-center text-center text-white gap-8 text-[40px]">
       <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="48" height="48" viewBox="0 0 64 64" fill="none"><path id="Union" d="M64 0C63.287 1.42003 62.556 2.82234 61.8076 4.20703C56.2793 14.4359 49.7853 23.6999 42.3281 32C49.7853 40.3001 56.2793 49.5641 61.8076 59.793C62.556 61.1777 63.287 62.5799 64 64C62.5799 63.287 61.1777 62.556 59.793 61.8076C49.5639 56.2792 40.3002 49.7845 32 42.3271C23.6998 49.7845 14.4361 56.2792 4.20703 61.8076C2.82231 62.556 1.42006 63.287 0 64C0.713035 62.5799 1.444 61.1777 2.19238 59.793C7.72062 49.5643 14.2139 40.3 21.6709 32C14.2139 23.7 7.72063 14.4357 2.19238 4.20703C1.44401 2.82233 0.713025 1.42004 0 0C1.42004 0.713025 2.82233 1.44401 4.20703 2.19238C14.4357 7.72063 23.7 14.2139 32 21.6709C40.3 14.2139 49.5643 7.72061 59.793 2.19238C61.1777 1.44401 62.58 0.713018 64 0Z" fill="var(--fill-0, #DE4747)"/></svg>
-      <a href="#Home" class="transition-colors duration-200 hover:text-neutral-400">Home</a>
-      <a href="#About" class="transition-colors duration-200 hover:text-neutral-400">About</a>
-      <a href="#Work" class="transition-colors duration-200 hover:text-neutral-400">Work</a>
-      <a href="#Contact" class="transition-colors duration-200 hover:text-neutral-400">Contact</a>
+      <a href="#Home" class="transition-colors duration-200 hover:text-[#898989]">Home</a>
+      <a href="#About" class="transition-colors duration-200 hover:text-[#898989]">About</a>
+      <a href="#Work" class="transition-colors duration-200 hover:text-[#898989]">Work</a>
+      <a href="#Contact" class="transition-colors duration-200 hover:text-[#898989]">Contact</a>
     </div>
   </div>
-
+  
   <main class="flex flex-col">
     <div class="max-w-448 mx-auto w-full">
       <!-- Hero Section -->
-      <section id="Home" class="flex min-h-screen items-center justify-between">
+      <section id="Home" class="flex min-h-screen items-center justify-between mb-30">
         <div>
             <div class="font-kavoon text-[96px] font-bold leading-[1.05] text-white my-5">
-              <h1>
-                <span class="text-[#DE4747]">Magical</span>
-                <span>Ideas</span>
-              </h1>
-              <h1>
-                <span>Professional</span>
-                <span class="text-[#DE4747]">Products</span>
-              </h1>
+              <h1><span class="text-[#DE4747]">Magical</span> <span>Ideas</span></h1>
+              <h1><span>Professional</span> <span class="text-[#DE4747]">Products</span></h1>
             </div>
-
-            <p class="text-[48px] text-[#898989] font-inter max-w-250">
-              Hi, I’m Kian Verdugo. I design the fascinating, code the future, and build the impossible.
-            </p>
-            
+            <p class="text-[48px] text-[#898989] font-inter max-w-250">Hi, I’m Kian Verdugo. I design the fascinating, code the future, and build the impossible.</p>
             <a href="CV_en.pdf" download="CV_en.pdf" class="my-15 flex w-fit items-center justify-center gap-6 rounded-[50px] border border-[#464646] bg-[#060606] px-8 py-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 43 43" fill="none" class="block shrink-0"><path d="M21.046 28.707c.39.39 1.024.39 1.414 0l6.364-6.364a1 1 0 0 0-1.414-1.414l-5.657 5.657V0h-2v26.586l-5.657-5.657a1 1 0 0 0-1.414 1.414l6.364 6.364ZM1.506 41.65V42.65H42v-2H1.506v1ZM41.494 42h1V28h-2v14h1ZM1 42h1V28H0v14h1Z" fill="#DE4747"/></svg>
-              <span class="text-[40px] text-white">Download CV</span>
+              <img src="/imgs/Download.svg" alt="Command-line terminal icon" class="h-10 w-10">
+              <span class="text-[40px] text-white transition-colors duration-200 hover:text-[#898989]">Download CV</span>
             </a>
           </div>
-          <img src="/imgs/HeadshotCropped.png" alt="Kian Verdugo Headshot" class="w-150 rounded-[25px]">
+          <img src="/imgs/HeadshotCropped.jpg" alt="Kian Verdugo Headshot" class="w-150 rounded-[25px]">
       </section>
       
-      <!-- Has short summaries of tasks I preform -->
-      <section id="About">
-        <h1 class="text-[#DE4747] text-[96px] font-iosevka-charon-mono flex justify-center">What I do</h1>
+      <section id="About" class="my-30">
+        <h1 class="text-[#DE4747] text-[96px] font-iosevka-charon-mono flex justify-center my-10">What I do</h1>
+        <!-- Three cards with short summaries of tasks I preform -->
+        <div class="flex justify-center gap-10">
+          <div class="flex max-w-185 flex-col items-center justify-evenly gap-20 wrap-break-words rounded-[25px] border border-[#898989] p-16 text-center text-white scale-90">
+            <img src="/imgs/Programming.svg" alt="Command-line terminal icon" class="h-32 w-32">
+            <h1 class="text-[40px]">Programming</h1>
+            <p class="text-[40px] text-[#898989]">Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
+          </div>
+          <div class="flex max-w-185 flex-col items-center justify-evenly gap-20 wrap-break-words rounded-[25px] border border-[#898989] p-16 text-center text-white">
+            <img src="/imgs/Internet.svg" alt="Internet icon" class="h-32 w-32">
+            <h1 class="text-[40px]">Web Development</h1>
+            <p class="text-[40px] text-[#898989]">Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
+          </div>
+          <div class="flex max-w-185 flex-col items-center justify-evenly gap-20 wrap-break-words rounded-[25px] border border-[#898989] p-16 text-center text-white scale-90">
+            <img src="/imgs/Paintbrush.svg" alt="Paintbrush icon" class="h-32 w-32">
+            <h1 class="text-[40px]">Graphic Design</h1>
+            <p class="text-[40px] text-[#898989]">Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
+          </div>
+        </div>
+      </section>
 
-        <div class="flex justify-center gap-20">
-          <div class="flex w-[300px] flex-col justify-evenly wrap-break-words rounded-[25px] border border-[#898989] px-8 py-14 text-white"> 
-            <img src="/imgs/Paintbrush.png" alt="UI & UX icon" class="h-16 w-16"> 
-            <h1>UI & UX</h1> 
-            <p>Designing products to capture attention.</p> 
-          </div>
-          <div class="flex w-[300px] flex-col justify-evenly wrap-break-words rounded-[25px] border border-[#898989] px-8 py-14 text-white"> 
-            <img src="/imgs/Paintbrush.png" alt="UI & UX icon" class="h-16 w-16"> 
-            <h1>Leadership</h1> 
-            <p>Managing strict deadlines through teamwork.</p> 
-          </div>
-          <div class="flex w-[300px] flex-col justify-evenly wrap-break-words rounded-[25px] border border-[#898989] px-8 py-14 text-white"> 
-            <img src="/imgs/Paintbrush.png" alt="UI & UX icon" class="h-16 w-16"> 
-            <h1>Programming</h1> 
-            <p>Writing clean logic across diverse languages.</p> 
-          </div>
-          <div class="flex w-[300px] flex-col justify-evenly wrap-break-words rounded-[25px] border border-[#898989] px-8 py-14 text-white"> 
-            <img src="/imgs/Paintbrush.png" alt="UI & UX icon" class="h-16 w-16"> 
-            <h1>Media Layout</h1> 
-            <p>Compiling content into visual layouts.</p> 
-          </div>
-      </section>
-      
-      <section class="my-40" id="Work">
-        <h1 class="text-[#DE4747] text-[96px] font-iosevka-charon-mono flex justify-start">My Projects</h1>
+      <section id="Work" class="my-30">
+        <h1 class="text-[#DE4747] text-[96px] font-iosevka-charon-mono flex justify-start my-5">My Projects</h1>
 
         <!-- Creates sectioning for every project -->
         <div class="items-center">
-          <div class="border-y border-[#464646] p-32">
-            <div class="flex items-center justify-between">
-              <div class="flex-col">
-                <h1 class="text-[48px] text-white">CodeOrCreate LTD Website</h1>
-                <h2 class="text-[40px] text-[#898989]">2025</h2>
-              </div>
-              <div>
-                <h1 class="text-[48px] text-white">Lead Programmer</h1>
-                <h2 class="text-[40px] text-[#898989]">Bootstrap</h2>
-              </div>
-            </div>
-          </div>
-          <div class="border-b border-[#464646] p-32">
-            <div class="flex items-center justify-between">
-              <div class="flex-col">
-                <h1 class="text-[48px] text-white">Homelessness Awareness Poster</h1>
-                <h2 class="text-[40px] text-[#898989]">2026</h2>
-              </div>
-              <div>
-                <h1 class="text-[48px] text-white">Designer</h1>
-                <h2 class="text-[40px] text-[#898989]">Google Slides</h2>
+          <a href="https://github.com">
+            <div class="group border-y border-[#464646] p-14">
+              <div class="flex items-center justify-between">
+                <div class="flex-col">
+                  <h1 class="text-[48px] text-white duration-200 group-hover:translate-x-16">National Geographic school Magazine</h1>
+                  <h2 class="text-[40px] text-[#898989] duration-300 group-hover:translate-x-16">2026</h2>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h1 class="text-[48px] text-white duration-200 group-hover:-translate-x-16">Designer</h1>
+                  <h2 class="text-[40px] text-[#898989] duration-200 group-hover:-translate-x-16">Google Slides</h2>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="border-b border-[#464646] p-32">
-            <div class="flex items-center justify-between">
-              <div class="flex-col">
-                <h1 class="text-[48px] text-white">National Geographic school Magazine</h1>
-                <h2 class="text-[40px] text-[#898989]">2026</h2>
-              </div>
-              <div>
-                <h1 class="text-[48px] text-white">Interviwer and Designer</h1>
-                <h2 class="text-[40px] text-[#898989]">Google Slides</h2>
+          </a>
+          <a href="https://github.com">
+            <div class="group border-b border-[#464646] p-14">
+              <div class="flex items-center justify-between">
+                <div class="flex-col">
+                  <h1 class="text-[48px] text-white duration-200 group-hover:translate-x-16">Homelessness Awareness Poster</h1>
+                  <h2 class="text-[40px] text-[#898989] duration-300 group-hover:translate-x-16">2026</h2>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h1 class="text-[48px] text-white duration-200 group-hover:-translate-x-16">Designer</h1>
+                  <h2 class="text-[40px] text-[#898989] duration-200 group-hover:-translate-x-16">Google Slides</h2>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
+          <a href="https://github.com">
+            <div class="group border-b border-[#464646] p-14">
+              <div class="flex items-center justify-between">
+                <div class="flex-col">
+                  <h1 class="text-[48px] text-white duration-200 group-hover:translate-x-16">CodeOrCreate LTD Website</h1>
+                  <h2 class="text-[40px] text-[#898989] duration-300 group-hover:translate-x-16">2025</h2>
+                </div>
+                <div class="flex flex-col items-start">
+                  <h1 class="text-[48px] text-white duration-200 group-hover:-translate-x-16">Lead programmer</h1>
+                  <h2 class="text-[40px] text-[#898989] duration-200 group-hover:-translate-x-16">Bootstrap</h2>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
 
         <!-- Load More button -->
-        <!-- <a href="/Projects.html" class="mt-15 mx-auto flex w-fit items-center justify-center gap-6 rounded-[50px] border border-[#464646] bg-[#060606] px-8 py-4">
-          <span class="text-[40px] text-white">Load More</span>
-          <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="64" height="100%" overflow="visible" viewBox="0 0 62 29.4558" fill="none">
-            <path id="Arrow 1" d="M61.4142 16.1421C62.1953 15.3611 62.1953 14.0948 61.4142 13.3137L48.6863 0.585787C47.9052 -0.195262 46.6389 -0.195262 45.8579 0.585787C45.0768 1.36684 45.0768 2.63317 45.8579 3.41421L57.1716 14.7279L45.8579 26.0416C45.0768 26.8227 45.0768 28.089 45.8579 28.8701C46.6389 29.6511 47.9052 29.6511 48.6863 28.8701L61.4142 16.1421ZM0 14.7279V16.7279H60V14.7279V12.7279H0V14.7279Z" fill="var(--stroke-0, white)"/>
-          </svg>
+        <!-- <a href="/Projects.html" class="group mt-15 mx-auto flex w-fit items-center gap-6 rounded-full border border-[#464646] bg-[#060606] px-8 py-4">
+          <span class="text-[40px] text-white transition-colors duration-200 group-hover:text-[#898989]">Load More</span>
+          <img src="/imgs/Arrow.svg"class="w-16 h-10">
         </a> -->
       </section>
 
       <!-- Scrolling section of all the technology I use -->
-      <section class="mb-40" id="Technology">
-        <h1 class="text-[#DE4747] text-[96px] font-iosevka-charon-mono flex justify-center">Current Techstack</h1>
-        <div class="overflow-hidden my-15 scrollbar-none flex justify-center">
+      <section id="Technology" class="my-30">
+        <h1 class="text-[#DE4747] text-[96px] font-iosevka-charon-mono flex justify-center my-10">Current Techstack</h1>
+        <div class="overflow-hidden scrollbar-none flex justify-center">
           <div class="flex flex-row gap-8 justify-center items-center">
-            <img src="/imgs/HTML Logo.png" class="w-64">
-            <img src="/imgs/CSS Logo.png" class="w-64">
-            <img src="/imgs/JavaScript Logo.png" class="w-64">
-            <img src="/imgs/Tailwind Logo.png" class="w-64">
-            <img src="/imgs/VSCode Logo.png" class="w-64">
-            <img src="/imgs/Python Logo.png" class="w-64">
-            <img src="/imgs/Git Logo.png" class="w-64">
-            <img src="/imgs/Java Logo.png" class="w-64">
-            <img src="/imgs/AWS Logo.png" class="w-64">
+            <img src="/imgs/HTML Logo.svg" class="w-64">
+            <img src="/imgs/CSS Logo.svg" class="w-64">
+            <img src="/imgs/JavaScript Logo.svg" class="w-64">
+            <img src="/imgs/Tailwind Logo.svg" class="w-64">
+            <img src="/imgs/VSCode Logo.svg" class="w-64">
+            <img src="/imgs/Python Logo.svg" class="w-64">
+            <img src="/imgs/Git Logo.svg" class="w-64">
+            <img src="/imgs/Java Logo.svg" class="w-64">
+            <img src="/imgs/AWS Logo.svg" class="w-64">
+            <img src="/imgs/NodeJS Logo.svg" class="w-64">
           </div>
         </div>
       </section>
 
-      <section id="Contact" class="flex justify-center">
+      <section class="flex justify-center mt-30" id="Contact">
         <div class="border border-[#464646] rounded-t-[25px] text-white">
           <div class="flex flex-col justify-center m-10">
             <h1 class="text-[82px]">Need help with a creative idea?</h1>
-            <h1 class="text-[82px]"> Contact me <a class="text-[#DE4747] underline" href="mailto:Kianverdugo05@gmail.com">via email</a> to collaborate!</h1>
+            <h1 class="text-[82px]"> Contact me <a class="text-[#DE4747] underline transition-colors duration-200 hover:text-[#AC3737]" href="mailto:Kianverdugo05@gmail.com">via email</a> to collaborate!</h1>
           </div>
 
           <div class="border-t border-t-[#464646] flex justify-between">
@@ -166,8 +157,8 @@
             <div class="m-10">
               <h1 class="text-[64px]">Socials</h1>
               <ul class="text-[40px] text-[#898989]">
-                <li><a href="https://linkedin.com/in/kian-verdugo-85708b41b">LinkedIn</a></li>
-                <li><a href="https://github.com/Sternaldesert">Github</a></li>
+                <li><a href="https://linkedin.com/in/kian-verdugo-85708b41b" class="transition-colors duration-200 hover:text-[#ddd]">LinkedIn</a></li>
+                <li><a href="https://github.com/Sternaldesert" class="transition-colors duration-200 hover:text-[#ddd]">Github</a></li>
                 <!-- <li><a href="">Youtube</a></li> -->
               </ul>
             </div>
