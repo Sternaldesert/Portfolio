@@ -32,3 +32,12 @@
   --color-hover-dark-subtext: #ddd;
   --color-hover-white-text: #898989;
 } */
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
