@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +17,16 @@
 </head>
 
 <body class="bg-[#060606]">
-  <div class="fixed md:left-1/2 md:-translate-x-1/2 md:top-8 border-2 border-[#464646] rounded-[25px] bg-[#060606] z-999 md:p-5 will-change-auto">
+  <div class="max-w-[90vw] md:max-w-fit fixed right-0 md:left-1/2 md:-translate-x-1/2 md:top-8 border-2 border-[#464646] rounded-[25px] bg-[#060606] z-999 md:p-5 m-5 md:m-0 will-change-auto">
     <div class="hidden md:flex justify-center items-center text-center text-white gap-6 text-4xl">
       <a href="#Home" class="transition-colors duration-200 hover:text-[#898989]">Home</a>
       <a href="#About" class="transition-colors duration-200 hover:text-[#898989]">About</a>
       <a href="#Work" class="transition-colors duration-200 hover:text-[#898989]">Work</a>
       <a href="#Contact" class="transition-colors duration-200 hover:text-[#898989]">Contact</a>
     </div>
-    <button class="md:hidden p-3.5"> 
+
+    <!-- Mobile menu -->
+    <button class="md:hidden p-2">
       <svg class="w-10 h-10" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://w3.org"> 
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> 
       </svg> 
@@ -31,41 +34,41 @@
   </div>
 
   <main class="flex flex-col">
-    <div class="max-w-full md:max-w-400 mx-auto w-full">
+    <div class="max-w-[90vw] md:max-w-400 mx-auto w-full">
       <!-- Hero Section -->
       <section id="Home" class="flex flex-col-reverse md:flex-row min-h-screen items-center justify-end md:justify-between"> 
-        <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-size-[24px_24px]"></div> 
+        <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-size-[24px_24px]"></div>
         <div> 
           <div class="font-kavoon text-5xl md:text-[86px] font-bold leading-[1.05] text-white my-5 text-center md:text-left"> 
             <h1><span class="text-[#DE4747]">Magical</span> <span>Ideas</span></h1> 
             <h1><span>Professional</span> <span class="text-[#DE4747]">Products</span></h1> 
           </div>
-          <p class="text-center font-inter text-2xl text-[#898989] wrap-break-word md:text-left md:text-4xl md:max-w-4xl">Hi, I’m Kian Verdugo. I design the fascinating, code the future, and build the impossible.</p>
+          <p class="text-center font-inter text-2xl text-[#898989] wrap-break-word md:text-left md:text-4xl md:max-w-4xl my-5 md:my-0">Hi, I’m Kian Verdugo. I design the fascinating, code the future, and build the impossible.</p>
           <div class="flex justify-center md:justify-start">
-            <a href="CV_en.pdf" download="CV_en.pdf" class="group my-5 md:my-10 flex w-fit items-center justify-center gap-6 rounded-[50px] border border-[#464646] bg-[#060606] px-8 py-4"> 
-              <img src="/imgs/Download.svg" alt="Download icon" class="w-7 md:w-10" aria-hidden="true"> 
+            <a href="CV_en.pdf" download="CV_en.pdf" class="group my-10 flex w-fit items-center justify-center gap-6 rounded-[50px] border border-[#464646] bg-[#060606] px-8 py-4"> 
+              <img src="/imgs/Download.svg" alt="Download icon" class="w-7 md:w-10" aria-hidden="true">
               <h2 class="text-3xl md:text-4xl text-white transition-colors duration-200 group-hover:text-[#898989]">Download CV<span class="text-white sr-only">(PDF)</span></h2> 
             </a>
           </div>
         </div>
-        <img src="/imgs/HeadshotCropped.jpg" alt="Kian Verdugo Headshot" class="w-full max-w-sm md:max-w-150 rounded-[25px] select-none" aria-hidden="true"> 
+        <img src="/imgs/HeadshotCropped.jpg" alt="Kian Verdugo Headshot" class="w-full max-w-sm md:max-w-150 my-5 md:my-0 rounded-[25px] select-none" aria-hidden="true">
       </section>
       
-      <section id="About" class="pt-36">
+      <section id="About" class="pt-18 md:pt-36">
         <h1 class="text-[#DE4747] text-5xl md:text-[86px] font-iosevka-charon-mono flex justify-center my-10">What I do</h1>
         <!-- Three cards with short summaries of tasks I preform -->
-        <div class="flex flex-col md:flex-row justify-center md:gap-10">
-          <div class="flex md:max-w-185 md:min-w-131 flex-col items-center justify-evenly gap-10 wrap-break-words rounded-[25px] border border-[#898989] p-16 text-center text-white md:scale-90">
+        <div class="flex flex-col md:flex-row justify-center gap-5 md:gap-10">
+          <div class="flex md:max-w-185 md:min-w-131 flex-col items-center justify-evenly gap-10 wrap-break-words rounded-[25px] border border-[#898989] p-12 md:p-16 text-center text-white md:scale-90">
             <img src="/imgs/Terminal.svg" alt="Command-line terminal icon" class="h-32 w-32 select-none" aria-hidden="true">
             <h2 class="text-xl md:text-4xl">Programming</h2>
             <p class="text-xl md:text-4xl text-[#898989]">Engineering accessibility-focused and robust code that powers seamless web performance.</p>
           </div>
-          <div class="flex md:max-w-185 md:min-w-131 flex-col items-center justify-evenly gap-10 wrap-break-words rounded-[25px] border border-[#898989] p-16 text-center text-white">
+          <div class="flex md:max-w-185 md:min-w-131 flex-col items-center justify-evenly gap-10 wrap-break-words rounded-[25px] border border-[#898989] p-12 md:p-16 text-center text-white">
             <img src="/imgs/Internet.svg" alt="Internet icon" class="h-32 w-32 select-none" aria-hidden="true">
             <h2 class="text-xl md:text-4xl">Web Development</h2>
             <p class="text-xl md:text-4xl text-[#898989]">Crafting natural digital environments that embrace creativity and modern conveniences.</p>
           </div>
-          <div class="flex md:max-w-185 md:min-w-131 flex-col items-center justify-evenly gap-10 wrap-break-words rounded-[25px] border border-[#898989] p-16 text-center text-white md:scale-90">
+          <div class="flex md:max-w-185 md:min-w-131 flex-col items-center justify-evenly gap-10 wrap-break-words rounded-[25px] border border-[#898989] p-12 md:p-16 text-center text-white md:scale-90">
             <img src="/imgs/Paintbrush.svg" alt="Paintbrush icon" class="h-32 w-32 select-none" aria-hidden="true">
             <h2 class="text-xl md:text-4xl">Graphic Design</h2>
             <p class="text-xl md:text-4xl text-[#898989]">Composing distinctive visual identities that capture attention and spark reaction.</p>
@@ -73,18 +76,18 @@
         </div>
       </section>
       
-      <section id="Work" class="pt-36">
+      <section id="Work" class="pt-18 md:pt-36">
         <h1 class="text-[#DE4747] text-5xl md:text-[86px] font-iosevka-charon-mono flex justify-start my-5">My Projects</h1>
         <!-- Creates sectioning for every project -->
         <div class="items-center will-change-transform">
           <a href="https://docs.google.com/document/d/191LcDX-K5dPsV49qsqjzoIixUAX0SaJ2kkp-w8f2zXY/">
-            <div class="group border-y border-[#464646] p-8 md:p-12">
-              <div class="flex items-center justify-between">
-                <div class="flex-col">
+            <div class="group border-y border-[#464646] py-8 px-6 md:p-12">
+              <div class="flex md:items-center md:justify-between md:flex-row flex-col-reverse">
+                <div class="flex flex-col">
                   <h2 class="text-3xl md:text-5xl text-white duration-200 md:group-hover:translate-x-16">School-wide Newspaper</h2>
                   <h3 class="text-2xl md:text-4xl text-[#898989] duration-300 md:group-hover:translate-x-16" aria-hidden="true">2026</h3>
                 </div>
-                <div class="flex flex-col items-start duration-200 group-hover:-translate-x-16" aria-hidden="true">
+                <div class="hidden md:flex flex-col items-start duration-200 md:group-hover:-translate-x-16" aria-hidden="true">
                   <h2 class="text-3xl md:text-5xl text-white">Writer</h2>
                   <h3 class="text-2xl md:text-4xl text-[#898989]">Google Docs</h3>
                 </div>
@@ -92,13 +95,13 @@
             </div>
           </a>
           <a href="https://docs.google.com/presentation/d/13_G0Y7AKUjzrKPb0Sw4xMSCqvjTP9SWiLqsTOZ6KqPU/">
-            <div class="group border-b border-[#464646] p-8 md:p-12">
-              <div class="flex items-center justify-between">
-                <div class="flex-col">
+            <div class="group border-y border-[#464646] py-8 px-6 md:p-12">
+              <div class="flex md:items-center md:justify-between md:flex-row flex-col-reverse">
+                <div class="flex flex-col">
                   <h2 class="text-3xl md:text-5xl text-white duration-200 md:group-hover:translate-x-16">Homelessness Awareness Poster</h2>
                   <h3 class="text-2xl md:text-4xl text-[#898989] duration-300 md:group-hover:translate-x-16" aria-hidden="true">2026</h3>
                 </div>
-                <div class="flex flex-col items-start duration-200 md:group-hover:-translate-x-16" aria-hidden="true">
+                <div class="hidden md:flex flex-col items-start duration-200 md:group-hover:-translate-x-16" aria-hidden="true">
                   <h2 class="text-3xl md:text-5xl text-white">Designer</h2>
                   <h3 class="text-2xl md:text-4xl text-[#898989]">Google Slides</h3>
                 </div>
@@ -106,13 +109,13 @@
             </div>
           </a>
           <a href="https://github.com/Sternaldesert/CodeOrCreate_2025">
-            <div class="group border-b border-[#464646] p-8 md:p-12">
-              <div class="flex items-center justify-between">
-                <div class="flex-col">
+            <div class="group border-y border-[#464646] py-8 px-6 md:p-12">
+              <div class="flex md:items-center md:justify-between md:flex-row flex-col-reverse">
+                <div class="flex flex-col">
                   <h2 class="text-3xl md:text-5xl text-white duration-200 md:group-hover:translate-x-16">CodeOrCreate LTD Website</h2>
                   <h3 class="text-2xl md:text-4xl text-[#898989] duration-300 md:group-hover:translate-x-16" aria-hidden="true">2025</h3>
                 </div>
-                <div class="flex flex-col items-start duration-200 md:group-hover:-translate-x-16" aria-hidden="true">
+                <div class="hidden md:flex flex-col items-start duration-200 md:group-hover:-translate-x-16" aria-hidden="true">
                   <h2 class="text-3xl md:text-5xl text-white">Programmer</h2>
                   <h3 class="text-2xl md:text-4xl text-[#898989]">Bootstrap</h3>
                 </div>
@@ -129,8 +132,8 @@
       </section>
 
       <!-- Scrolling section of all the technology I use -->
-      <section id="Technology" class="pt-36"> 
-        <h1 class="text-[#DE4747] text-5xl md:text-[86px] font-iosevka-charon-mono flex justify-center my-10">Current Techstack</h1> 
+      <section id="Technology" class="pt-18 md:pt-36">
+        <h1 class="text-[#DE4747] text-4xl md:text-[86px] font-iosevka-charon-mono flex justify-center my-10">Current Techstack</h1> 
         <h2 class="text-white sr-only">HTML, CSS, Javascript, Tailwind, VSCode, Python, Java, NODEJS, and Lua.</h2> 
         
         <div class="w-full overflow-hidden select-none mask-[linear-gradient(to_right,transparent_0,black_40%,black_60%,transparent_100%)]" aria-hidden="true"> 
@@ -163,23 +166,23 @@
         </div>
       </section>
 
-      <section id="Contact" class="flex justify-center pt-36">
+      <section id="Contact" class="flex justify-center pt-18 md:pt-36">
         <h1 class="text-white sr-only">Contact</h1>
-        <div class="border border-[#464646] rounded-t-[25px] text-white">
-          <div class="flex flex-col justify-center m-15 text-center md:text-left">
-            <h2 class="text-5xl md:text-6xl">Need help with a creative idea?</h2>
-            <h2 class="text-5xl md:text-6xl">Contact me <a class="text-[#DE4747] underline transition-colors duration-200 hover:text-[#AC3737]" href="mailto:kianverdugo05@gmail.com">via email</a> to collaborate!</h2>
+        <div class="border border-[#464646] rounded-t-[25px] text-white max-w-[90vw] md:max-w-full">
+          <div class="flex flex-col justify-center m-5 md:m-15 text-center md:text-left">
+            <h2 class="text-4xl md:text-6xl">Need help with a creative idea?</h2>
+            <h2 class="text-4xl md:text-6xl">Contact me <a class="text-[#DE4747] underline transition-colors duration-200 hover:text-[#AC3737]" href="mailto:kianverdugo05@gmail.com">via email</a> to collaborate!</h2>
             <h2 class="text-white sr-only">Kianverdugo05@gmail.com</h2>
           </div>
           <!-- Social links portion -->
-          <div class="border-t border-t-[#464646] flex justify-between p-5">
-            <div class="mx-10 my-3" aria-hidden="true">
-              <h1 class="text-5xl md:text-6xl my-2">Kian Verdugo</h1>
-              <h2 class="text-4xl md:text-5xl text-[#898989]">© 2026 | All rights reserved.</h2>
+          <div class="border-t border-t-[#464646] flex md:justify-between md:p-5 px-5 md:px-10">
+            <div class="my-3" aria-hidden="true">
+              <h1 class="text-4xl md:text-6xl my-2">Kian Verdugo</h1>
+              <h2 class="text-3xl md:text-5xl text-[#898989]">© 2026 | All rights reserved.</h2>
             </div>
-            <div class="mx-10 my-3">
-              <h1 class="text-5xl md:text-6xl my-2">Socials</h1>
-              <div class="text-4xl md:text-5xl text-[#898989] gap-3">
+            <div class="my-3">
+              <h1 class="text-4xl md:text-6xl my-2">Socials</h1>
+              <div class="text-3xl md:text-5xl text-[#898989] gap-3">
                 <h2><a href="https://linkedin.com/in/kian-verdugo-85708b41b" class="transition-colors duration-200 hover:text-white">LinkedIn</a></h2>
                 <h2><a href="https://github.com/Sternaldesert" class="transition-colors duration-200 hover:text-white">Github</a></h2>
                 <!-- <li><a href="">Youtube</a></li> -->
