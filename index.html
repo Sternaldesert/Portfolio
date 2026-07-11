@@ -17,24 +17,33 @@
 </head>
 
 <body class="bg-[#060606]">
-  <div class="max-w-[90vw] md:max-w-fit fixed right-0 md:left-1/2 md:-translate-x-1/2 md:top-8 border-2 border-[#464646] rounded-[25px] bg-[#060606] z-999 md:p-5 not-sm:m-5 will-change-auto">
-    <div class="hidden md:flex justify-center items-center text-center text-white gap-6 text-4xl">
-      <a href="#Home" class="transition-colors duration-200 hover:text-[#898989]">Home</a>
-      <a href="#About" class="transition-colors duration-200 hover:text-[#898989]">About</a>
-      <a href="#Work" class="transition-colors duration-200 hover:text-[#898989]">Work</a>
-      <a href="#Contact" class="transition-colors duration-200 hover:text-[#898989]">Contact</a>
-    </div>
+  <div class="max-w-[90dvw] md:max-w-fit fixed top-0 right-0 md:left-1/2 md:-translate-x-1/2 md:top-8 border-2 border-[#464646] rounded-[25px] bg-[#060606] z-10 md:p-5 not-sm:m-5 will-change-auto">
+    <nav>
+      <ul class="hidden md:flex justify-center items-center text-center text-white gap-6 text-4xl">
+        <li><a href="#Home" class="transition-colors duration-200 hover:text-[#898989]">Home</a></li>
+        <li><a href="#About" class="transition-colors duration-200 hover:text-[#898989]">About</a></li>
+        <li><a href="#Work" class="transition-colors duration-200 hover:text-[#898989]">Work</a></li>
+        <li><a href="#Contact" class="transition-colors duration-200 hover:text-[#898989]">Contact</a></li>
+      </ul>
 
-    <!-- Mobile menu -->
-    <button class="md:hidden p-2">
-      <svg class="w-10 h-10" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://w3.org"> 
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> 
-      </svg> 
-    </button>
+      <!-- Mobile button -->
+      <button class="md:hidden p-2" onclick="openSidebar()">
+        <svg class="w-10 h-10" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://w3.org"> 
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> 
+        </svg> 
+      </button>
+    </nav>
   </div>
+  
+  <ul class="translate-full md:hidden fixed top-0 bottom-0 right-0 w-1/2 bg-black flex flex-col justify-center items-center text-center text-white gap-8 text-4xl z-40 border-l border-white/10">
+    <li><a href="#Home" class="transition-colors duration-200 hover:text-[#898989]">Home</a></li>
+    <li><a href="#About" class="transition-colors duration-200 hover:text-[#898989]">About</a></li>
+    <li><a href="#Work" class="transition-colors duration-200 hover:text-[#898989]">Work</a></li>
+    <li><a href="#Contact" class="transition-colors duration-200 hover:text-[#898989]">Contact</a></li>
+  </ul>
 
   <main class="flex flex-col">
-    <div class="max-w-[90vw] md:max-w-400 mx-auto w-full">
+    <div class="max-w-[90dvw] md:max-w-400 mx-auto w-full">
       <!-- Hero Section -->
       <section id="Home" class="flex flex-col-reverse md:flex-row min-h-dvh items-center justify-end md:justify-between"> 
         <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-size-[1.5rem_1.5rem]"></div>
@@ -168,7 +177,7 @@
 
       <section id="Contact" class="flex justify-center pt-18 md:pt-36">
         <h1 class="text-white sr-only">Contact</h1>
-        <div class="border border-[#464646] rounded-t-[25px] text-white max-w-[90vw] md:max-w-full">
+        <div class="border border-[#464646] rounded-t-[25px] text-white max-w-[90dvw] md:max-w-full">
           <div class="flex flex-col justify-center m-5 md:m-15 text-center md:text-left">
             <h2 class="text-4xl md:text-6xl">Need help with a creative idea?</h2>
             <h2 class="text-4xl md:text-6xl">Contact me <a class="text-[#DE4747] underline transition-colors duration-200 hover:text-[#AC3737]" href="mailto:kianverdugo05@gmail.com">via email</a> to collaborate!</h2>
